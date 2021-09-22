@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+.nav-menu {
+    display: inline-block;
+    background-color: cornflowerblue;
+    padding: .5rem;
+    font-family: 'New Tegomin';
+    color: white;
+}
+
+.nav-menu--fluo {
+    background-color: greenyellow;
+    color: black;
+}
+
+.nav-menu__item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-menu__item--fluo {
+    color: orangered;
+}
+
+.panel {
+    border: 1rem solid orange;
+    background-color: yellow;
+}
+
+.panel--fluo {
+    border-color: orangered;
+    background-color: greenyellow;
+}
+
+.panel--dashed {
+    border-style: dashed;
+}

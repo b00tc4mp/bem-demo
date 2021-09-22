@@ -1,37 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
-
-.nav-menu {
+.form {
+    border: 2px solid black;
     display: inline-block;
-    background-color: cornflowerblue;
-    padding: .5rem;
-    font-family: 'New Tegomin';
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: .5rem;
+}
+
+.form--dark {
+    background-color: black;
     color: white;
 }
 
-.nav-menu--fluo {
-    background-color: greenyellow;
+.form--column {
+    display: flex;
+    flex-direction: column;
+    min-width: 10rem;
+    max-width: 20rem;
+}
+
+.input, .button {
+    border: 2px solid black;
+    border-radius: .25rem;
+    padding: .1rem .5rem .1rem .5rem;
+    margin: .1rem;
+}
+
+.input--error {
+    border-color: red;
+}
+
+.nav {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: .5rem;
+}
+
+.nav--dark {
+    background-color: black;
+    color: white;
+}
+
+.nav__item {
+    text-decoration: none;
+}
+
+.nav__item:link {
     color: black;
 }
 
-.nav-menu__item {
-    text-decoration: none;
-    color: inherit;
+.nav--dark > .nav__item:link {
+    color: white;
 }
 
-.nav-menu__item--fluo {
-    color: orangered;
+.nav__item:visited {
+    color: gray;
 }
 
-.panel {
-    border: 1rem solid orange;
-    background-color: yellow;
+.nav__item:hover, .nav--dark > .nav__item:hover {
+    color: purple;
 }
 
-.panel--fluo {
-    border-color: orangered;
-    background-color: greenyellow;
+.ulist {
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: .5rem;
+    list-style: none;
 }
 
-.panel--dashed {
-    border-style: dashed;
+.ulist__item {
+    background-color: lightgray;
+    border: 2px solid transparent;
+    border-radius: .25rem;
+    padding: .1rem .5rem .1rem .5rem;
+    margin: .1rem;
+}
+
+.card {
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: .5rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+}
+
+.card__content {
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: .5rem;
+    background-color: lightgray;
+}
+
+.card__content-title {
+    font-size: 1.1rem;
+}
+
+.card__content-description {
+    font-size: .75rem;
+}
+
+.card__content-related-things {
+    margin: 1rem;
 }
